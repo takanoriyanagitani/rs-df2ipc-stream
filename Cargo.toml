@@ -1,0 +1,49 @@
+[package]
+name = "rs-df2ipc-stream"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+
+[[bin]]
+name = "df2ipc-stream"
+
+[dependencies.clap]
+version = "4"
+features = ["derive"]
+
+[dependencies.arrow]
+version = "56"
+default-features = false
+features = [
+	"ipc",
+]
+
+[dependencies.datafusion]
+version = "50"
+default-features = false
+features = [
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"rt-multi-thread",
+	"macros",
+]
+
+[dependencies.futures]
+version = "0"
+default-features = false
+features = [
+	"async-await",
+	"executor",
+	"std",
+]
