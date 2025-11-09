@@ -1,0 +1,2 @@
+{"timestamp":"2025-11-07T00:01:37.012345Z", "severity":"INFO", "status":200, "body":"apt update done"}
+{"timestamp":"2025-11-06T00:01:37.012345Z", "severity":"WARN", "status":500, "body":"apt update failure"}
