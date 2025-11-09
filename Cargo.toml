@@ -3,6 +3,17 @@ name = "rs-df2ipc-stream"
 version = "0.1.0"
 edition = "2024"
 
+description = "Converts the dataframe to an arrow ipc stream."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-df2ipc-stream"
+homepage = "https://github.com/takanoriyanagitani/rs-df2ipc-stream"
+documentation = "https://docs.rs/rs-df2ipc-stream/latest"
+keywords = ["arrow", "ipc", "stream", "datafusion"]
+
+exclude = [
+	"df2ipc-stream",
+]
+
 [lints.rust]
 unsafe_code = "forbid"
 
